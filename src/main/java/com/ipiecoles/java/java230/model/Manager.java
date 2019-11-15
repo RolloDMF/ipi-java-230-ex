@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Manager extends Employe {
 
 	private Set<Technicien> equipe = new HashSet();

@@ -5,6 +5,9 @@ import org.joda.time.LocalDate;
 
 import java.util.Objects;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Technicien extends Employe implements Comparable<Technicien> {
 
 

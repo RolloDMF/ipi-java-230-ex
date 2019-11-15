@@ -1,7 +1,10 @@
 package com.ipiecoles.java.java230.model;
 
+import javax.persistence.Entity;
+
 import org.joda.time.LocalDate;
 
+@Entity
 public final class Entreprise {
 	public static final Double SALAIRE_BASE = 1480.27;
 	public static final Integer NB_CONGES_BASE = 25;
@@ -13,5 +16,4 @@ public final class Entreprise {
 	public static Double primeAnnuelleBase() {
 		return LocalDate.now().getYear() * 0.5;
 	}
-
 }
